@@ -1,0 +1,141 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Christopher} % Your first name
+\familyname{Morgan} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{35a Matai Rd, Greenlane}{Auckland, New Zealand}
+\mobile{+64 21 0224 2161}
+\email{chris.j.r.morgan@gmail.com}
+% \homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+% \extrainfo{additional information}
+% \photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+% \quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2011--Present}{Bachelor of Engineering}{The University of Auckland}{Auckland}{}{}  % Arguments not required can be left empty
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\cventry{2013--Present}{Full Stack Developer}{\textsc{Young \& Shand}}{Auckland}{}{Developed web applications (both frontend and backend), administered databases, managed and set up servers and managed deployment system.
+\newline{}\newline{}
+Notable achievements:
+\begin{itemize}
+\item Created company dashboard for internal use. Involved setting up televisions and Raspberry Pi to display them.
+\item Re-engineered deployment system:
+\begin{itemize}
+\item Increased automation
+\item Improved security
+\end{itemize}
+\item Re-engineered database consolidation application:
+\begin{itemize}
+\item Optimised data entry
+\item Altered data structure to allow easier querying
+\end{itemize}
+\end{itemize}}
+
+%----------------------------------------------------------------------------------------
+%	COMPETITION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Competitions}
+
+\cventry{2014}{NZPC}{Team Evolving Potato Pheonix}{7\textsuperscript{th} in open tertiary bracket}{}{}
+\cventry{2013}{IEEExtreme}{Team Forkbomb}{1\textsuperscript{st} in New Zealand and 14\textsuperscript{th} worldwide}{}{}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\cvitem{Advanced}{Python, Shell, Javascript, PHP, Linux, MySQL, Nginx}
+\cvitem{Intermediate}{Java, PostgreSQL, MongoDB, Apache, HTML, CSS, \LaTeX}
+\cvitem{Basic}{C, C++}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Game Development}{Comics}
+\cvlistdoubleitem{Fishing}{Craft Beer}
+\cvlistitem{Vinyl Records}
+
+%----------------------------------------------------------------------------------------
+%	References
+%----------------------------------------------------------------------------------------
+
+\section{References}
+
+\cventry{}{Izac Hancock}{izac.hancock@youngshand.com}{+64 21 859 600}{}{}
+\cventry{}{Robert King}{kingrobertking@gmail.com}{+64 27 635 2221}{}{}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+\clearpage
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
