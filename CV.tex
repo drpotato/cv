@@ -13,14 +13,14 @@
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 %
 % Important note:
-% This template requires the moderncv.cls and .sty files to be in the same 
-% directory as this .tex file. These files provide the resume style and themes 
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
 % used for structuring the document.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%    PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
 \documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
@@ -28,12 +28,12 @@
 \moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
-\usepackage[scale=0.75]{geometry} % Reduce document margins
+\usepackage[scale=0.80]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
 %----------------------------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION SECTION
+%    NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 
 \firstname{Christopher} % Your first name
@@ -52,71 +52,60 @@
 %----------------------------------------------------------------------------------------
 
 \begin{document}
+\makecvtitle% Print the CV title
 
-\makecvtitle % Print the CV title
+\vspace{-1.5cm}
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
+%    WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Professional Experience}
+
+\cventry{Nov 2014 --- Present}{Software Engineer Intern}{Hapara Inc.}{Auckland}
+{}{Working on Interact Team, building parts of Teacher Dashboard and peripheral
+    products. Mainly developing in Python (AppEngine, Cloud Endpoints) and
+    JavaScript (AngularJS). Researched possible new products and business
+    opportunity.}
+
+\cventry{Jul 2013 --- Nov 2014}{Full Stack Developer}{Young \& Shand}{Auckland}
+{}{Developed cloud based applications (both frontend and backend) for clients,
+    collaborating with colleagues with different skill sets. Administered
+    AWS/Rackspace servers, SQL and NoSQL databases and deployment system.}
+
+%----------------------------------------------------------------------------------------
+%    EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Education}
 
-\cventry{2011--Present}{Bachelor of Engineering (Software)}{The University of
+\cventry{2011 --- Present}{Bachelor of Engineering (Software)}{The University of
 Auckland}{New Zealand}{}{}  % Arguments not required can be left empty
 
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
+%    PROJECTS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Experience}
-
-\cventry{Nov 2014 -- Present}{Software Engineer Intern}{Hapara Inc.}{Auckland}{}{
-	Worked on Teacher Dashboard and peripheral products, mainly developing in 
-	Python and JavaScript.
-	\newline{}\newline{}
-	Notable achievements:
-	\begin{itemize}
-	\item Improved Chrome Extension, increasing security and making the code
-		  more testable. Also wrote unit tests.
-    \item Developed proof of concept products, exploring new and bleeding edge
-          technologies.\newline{}\newline{}
-	\end{itemize}
-}
-
-\cventry{Jul 2013 -- Nov 2014}{Full Stack Developer}{Young \& Shand}{Auckland}{}{
-	Developed cloud based applications (both frontend and backend) for clients,
-	collaborating with colleagues with different skill sets. Administered
-	AWS/Rackspace servers, databases and deployment system.
-	\newline{}\newline{}
-	Notable achievements:
-	\begin{itemize}
-	\item Updated dnsimple-python to support the new, versioned API, upgraded
-	to Python 3 while keeping Python 2 support and added unit tests.
-	\item Created real-time analytical business development dashboard for
-	internal use. Involved setting up displays with Raspberry Pi attached to
-	deliver information.
-	\item Re-engineered deployment system in Python:
-	\begin{itemize}
-	\item Increased automation
-	\item Improved security
-	\item Centralised access control
-	\end{itemize}
-	\item Built a company wide XMPP based password management system.
-	\end{itemize}
-}
+\section{Projects}
+\cventry{2015}{Scannp}{Personal}{}{}{iOS/Android app for scanning University of
+    Auckland student IDs using Parse and Swift. Will be used by the Software
+    Engineering Students Association for events and registration.}
+\cventry{2014}{Interact}{Hapara Inc}{}{}{Refactored Interact Chrome extension
+    to be more testable, secure and include increased metrics for usage and
+    runtime errors.}
+\cventry{2014}{Pysh}{University course in Operating Systems}{}{}{Python Shell.
+    Incorporated piping, background jobs and history. Utilised lexical
+    analysis, threading and introspection.}
+\cventry{2014}{Filtr}{University course in Software Architecture}{}{}{Profanity
+    filter API and consuming frontend client. Made API backend using Java
+    Spring Framework, Hibernate and frontend using AngularJS.}
+\cventry{2013}{Geckoboards}{Young \& Shand}{}{}{Built dashboards to pull in
+    data from Dropbox, Facebook, Bitbucket, Google Analytics and Google AdWords
+    to a dashboard for business development. Used Python, RabbitMQ and
+    Raspberry Pis.}
 
 %----------------------------------------------------------------------------------------
-%	SKILLS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Skills}
-
-\cvitem{Advanced}{Python, JavaScript, Linux Administration, Shell Scripting, Nginx, Git}
-\cvitem{Intermediate}{Apache, Java, PHP}
-\cvitem{Basic}{C, C++, CSS, HTML, MongoDB, MySQL, PostgreSQL, \LaTeX}
-
-%----------------------------------------------------------------------------------------
-%	COMPETITION SECTION
+%    COMPETITION SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Competitions}
@@ -127,26 +116,13 @@ open tertiary bracket}{}{}
 and 14\textsuperscript{th} worldwide}{}{}
 
 %----------------------------------------------------------------------------------------
-%	INTERESTS SECTION
+%    INTERESTS SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Interests}
-
-\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
-
-\cvlistdoubleitem{Game Development}{Comics}
-\cvlistdoubleitem{Photography}{Craft Beer}
-\cvlistdoubleitem{Vinyl Records}{Spanish}
-
-%----------------------------------------------------------------------------------------
-%	References
-%----------------------------------------------------------------------------------------
-
-\section{References}
-
-\cventry{}{Tony Kong}{tony.kong@hapara.com}{+64 21 209 7172}{}{}
-\cventry{}{Robert King}{kingrobertking@gmail.com}{+64 27 635 2221}{}{}
-
-%----------------------------------------------------------------------------------------
+\cvitem{}{In my spare time I enjoy playing card/board games, photography,
+    reading comics, listening to vinyl records, making videogames and finding
+    out interesting facts using Python. I'm also Vice President of the Software
+    Engineering Students Association.}
 
 \end{document}
