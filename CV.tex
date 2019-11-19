@@ -26,7 +26,7 @@
 \documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
 \moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{orange} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
 \usepackage[scale=0.80]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
@@ -40,8 +40,8 @@
 \familyname{Morgan} % Your last name
 
 \title{Resume}
-\address{16/148-152 Regent St, Refern 2016}{NSW, Australia}
-\mobile{+61 432 779 712}
+\address{Erskineville 2043}{NSW, Australia}
+\mobile{+62 432 779 712}
 \email{chris.j.r.morgan@gmail.com}
 
 %----------------------------------------------------------------------------------------
@@ -58,13 +58,14 @@
 \section{Professional Experience}
 
 \cventry{2016 --- Now}{Developer}{Atlassian}{Sydney}
-{}{Developing billing systems and user experiences. }
+{}{Currently building next-gen Jira project configuration experiences and
+    decomposing the Jira monolith. Previously built reliable commerce systems to
+    enable the business and user experiences for customers.}
 
-\cventry{2015}{Software Engineer Intern}{Hapara}{Auckland}
-{}{Developed the Teacher Dashboard and Interact web apps as well as peripheral
-    services. Mainly developing in Python (AppEngine, Cloud Endpoints) and
-    JavaScript (AngularJS). Researched possible new products and business
-    opportunities.}
+\cventry{2015}{Intern Software Engineer}{Hapara}{Auckland}
+{}{Developed Teacher Dashboard and Interact web apps as well as peripheral
+    services. Worked in Python (AppEngine, Cloud Endpoints) and JavaScript
+    (AngularJS). Researched possible new products and business opportunities.}
 
 \cventry{2013 --- 2014}{Full Stack Developer}{Young \& Shand}{Auckland}
 {}{Developed cloud based applications (both frontend and backend) for clients,
@@ -75,19 +76,30 @@
 %    PROJECTS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Projects}
+\section{Project Highlights}
+\cventry{2019 --- Now}{Jira Decomposition}{Atlassian}{}{}{Extracting project
+    configuration from the Jira monolith into a CQRS style system to support
+    high throughput, low latency reads and low throughput writes. Tools: Java,
+    Kotlin, Spring, Spring Boot, AWS (DynamoDB, SQS), PostgreSQL}
 
-\cventry{2017 --- Now}{Billing UX}{Atlassian}{}{}{Building the new Atlassian
-    billing experience}
+\cventry{2018}{Next-gen Jira}{Atlassian}{}{}{Developed platform support for
+    next-gen Jira features: Epic and Sub-task Issue Types, default values for
+    Fields. Tools: Java, PostgreSQL, Spring, JavaScript, React, Flow}
+
+\cventry{2017 --- 2018}{Stride Billing}{Atlassian}{}{}{Worked with the Stride
+    team to deliver a unified billing experience with other Atlassian cloud
+    products, added multi-tier pricing support to the monolithic billing system
+    and supported the migration of Hipchat customers. Tools: Java, Spring,
+    Hibernate, PostgreSQL}
+
+\cventry{2017 --- 2018}{Billing UX}{Atlassian}{}{}{Building the new Atlassian
+    billing experience. Worked with Product Managers and Designers to address
+    customer pain points while building new features to support the rest of the
+    business. Tools: JavaScript, React, Redux, Saga}
 
 \cventry{2016}{Pulse}{Atlassian}{}{}{Built microservices to integrate with
-    third party billing system. Developed using Java, Spring Boot, NodeJS,
-    TypeScript, AWS.}
-
-\cventry{2014 --- 2015}{Interact}{Hapara}{}{}{Built backend microservices for
-    business logic between teacher admin panel and students machines. Refactored
-    Chrome extension to be more testable, secure and include increased metrics
-    for usage and runtime errors.}
+    third party billing system. Tools: Java, Kotlin, Spring Boot, NodeJS,
+    TypeScript, AWS}
 
 %----------------------------------------------------------------------------------------
 %    EDUCATION SECTION
@@ -95,7 +107,7 @@
 
 \section{Education}
 
-\cventry{2011 --- 2015}{BE(Hons) in Software Engineering}{The University of
+\cventry{2011 --- 2015}{BE (Hons) in Software Engineering}{The University of
     Auckland}{New Zealand}{}{}
 
 
@@ -104,9 +116,9 @@
 %----------------------------------------------------------------------------------------
 
 \section{Interests}
-\cvitem{}{In my spare time I enjoy playing card and board games, photography,
-    reading comics, listening to vinyl records, making videogames and finding
-    out interesting facts using Python. I was elected Vice President of the
-    Software Engineering Students Association this year.}
+\cvitem{}{In my spare time I love to organise and play Dungeons \& Dragons,
+    visit art museums, cook and eat great food, read fantasy novels, photograph
+    people, explore and travel to new cities, and play board games and Magic:
+    The Gathering.}
 
 \end{document}
